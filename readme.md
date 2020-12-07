@@ -24,3 +24,10 @@ gestion des flux de msg
 ## Spark
 analyse des données
 
+## Elasticsearch
+
+Logiciel pour indexation et recherche de données
+
+### Kibana
+
+Greffon de visualisation de données pour Elasticsearch
