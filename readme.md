@@ -5,7 +5,7 @@ Partiel de ASI322
 
 1. collecte des données avec appel à l'API Twitter -> Elasticsearch
 2. Gestion des flux de messages -> Kafka
-3. Stockage des données -> Hadoop
+3. Stockage des données -> Hadoop. map reduce pour trier par hashtag ?
 4. Analyse des données -> Kafka
 
 # API Twitter
