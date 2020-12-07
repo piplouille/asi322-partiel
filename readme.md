@@ -14,20 +14,17 @@ Partiel de ASI322
 
 # Techno
 
-## Hadoop
+## Elasticsearch
+Logiciel pour indexation et recherche de données
 
-Storage and process of large datasets
+### Kibana
+Greffon de visualisation de données pour Elasticsearch
 
 ## Kafka
 gestion des flux de msg
 
 ## Spark
-analyse des données
+Analyse des données
 
-## Elasticsearch
-
-Logiciel pour indexation et recherche de données
-
-### Kibana
-
-Greffon de visualisation de données pour Elasticsearch
+### Hadoop
+Storage and process of large datasets
