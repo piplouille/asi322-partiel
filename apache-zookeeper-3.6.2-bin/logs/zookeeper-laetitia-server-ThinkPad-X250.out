@@ -98,3 +98,12 @@
 2020-12-07 12:29:05,030 [myid:] - INFO  [main:ContainerManager@83] - Using checkIntervalMs=60000 maxPerMinute=10000 maxNeverUsedIntervalMs=0
 2020-12-07 12:29:06,785 [myid:] - INFO  [SyncThread:0:FileTxnLog@284] - Creating new log file: log.1a3
 2020-12-07 12:29:11,040 [myid:] - INFO  [SessionTracker:ZooKeeperServer@610] - Expiring session 0x10000b3f69f0002, timeout of 6000ms exceeded
+2020-12-07 12:34:12,983 [myid:] - WARN  [NIOWorkerThread-4:NIOServerCnxn@373] - Close of session 0x0
+java.io.IOException: Len error 1347375956
+	at org.apache.zookeeper.server.NIOServerCnxn.readLength(NIOServerCnxn.java:541)
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:332)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:522)
+	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:154)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
