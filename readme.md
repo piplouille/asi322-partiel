@@ -3,10 +3,10 @@ Partiel de ASI322
 
 # Architecture lambda
 
-1. collecte des données avec appel à l'API Twitter
-2. Kafka pour gestion des flux de messages
-3. Hadoop pour le stockage
-4. Spark pour l'analyse
+1. collecte des données avec appel à l'API Twitter -> Elasticsearch
+2. Gestion des flux de messages -> Kafka
+3. Stockage des données -> Hadoop
+4. Analyse des données -> Kafka
 
 # API Twitter
 
