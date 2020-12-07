@@ -9,8 +9,11 @@ Partiel de ASI322
 
 Storage and process of large datasets
 
+Map reduce
 
 ## Spark
+
+On prend Spark pour utiliser Hadoop : tout est inclus + d'autres outils
 
 ## HBASE
 
