@@ -14,9 +14,9 @@ Partiel de ASI322
 
 Storage and process of large datasets
 
-Map reduce
+## Kafka
+gestion des flux de msg
 
 ## Spark
-
-On prend Spark pour utiliser Hadoop : tout est inclus + d'autres outils
+analyse des données
 
