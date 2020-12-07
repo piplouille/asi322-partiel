@@ -7,6 +7,9 @@ Partiel de ASI322
 
 ## Hadoop
 
+Storage and process of large datasets
+
+
 ## Spark
 
 ## HBASE
