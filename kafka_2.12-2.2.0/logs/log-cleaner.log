@@ -11,6 +11,7 @@
 [2020-12-07 12:18:28,270] INFO Starting the log cleaner (kafka.log.LogCleaner)
 [2020-12-07 12:19:16,164] INFO Starting the log cleaner (kafka.log.LogCleaner)
 [2020-12-07 12:19:16,252] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
+<<<<<<< HEAD
 >>>>>>> 5ee5e72b80d7a5c2c08f22c48b2098276d595182
 [2020-12-07 12:31:17,101] INFO Starting the log cleaner (kafka.log.LogCleaner)
 [2020-12-07 12:31:17,159] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
@@ -18,3 +19,19 @@
 [2020-12-07 12:36:43,654] INFO [kafka-log-cleaner-thread-0]: Shutting down (kafka.log.LogCleaner)
 [2020-12-07 12:36:43,656] INFO [kafka-log-cleaner-thread-0]: Stopped (kafka.log.LogCleaner)
 [2020-12-07 12:36:43,656] INFO [kafka-log-cleaner-thread-0]: Shutdown completed (kafka.log.LogCleaner)
+=======
+[2020-12-07 12:29:08,029] INFO Starting the log cleaner (kafka.log.LogCleaner)
+[2020-12-07 12:29:08,107] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
+[2020-12-07 12:29:08,854] INFO Shutting down the log cleaner. (kafka.log.LogCleaner)
+[2020-12-07 12:29:08,855] INFO [kafka-log-cleaner-thread-0]: Shutting down (kafka.log.LogCleaner)
+[2020-12-07 12:29:08,855] INFO [kafka-log-cleaner-thread-0]: Stopped (kafka.log.LogCleaner)
+[2020-12-07 12:29:08,855] INFO [kafka-log-cleaner-thread-0]: Shutdown completed (kafka.log.LogCleaner)
+[2020-12-07 12:29:41,034] INFO Starting the log cleaner (kafka.log.LogCleaner)
+[2020-12-07 12:29:41,112] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
+[2020-12-07 12:30:01,467] INFO Shutting down the log cleaner. (kafka.log.LogCleaner)
+[2020-12-07 12:30:01,468] INFO [kafka-log-cleaner-thread-0]: Shutting down (kafka.log.LogCleaner)
+[2020-12-07 12:30:01,468] INFO [kafka-log-cleaner-thread-0]: Stopped (kafka.log.LogCleaner)
+[2020-12-07 12:30:01,468] INFO [kafka-log-cleaner-thread-0]: Shutdown completed (kafka.log.LogCleaner)
+[2020-12-07 12:33:10,160] INFO Starting the log cleaner (kafka.log.LogCleaner)
+[2020-12-07 12:33:10,238] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
+>>>>>>> 261e914e405ffd1320fca583d21c77ab43ad45dd
