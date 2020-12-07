@@ -1,6 +1,6 @@
 search_tweets_api:
   account_type: premium
-  endpoint: localhost:8080/
+  endpoint: localhost:9092/
   consumer_key: HpjymvsHGkZfa4WtJg4Y3BgkN
   consumer_secret: NqyQ6LblsqPSPVdo6IGFR1U5RQieeIsHSCaEPcRy4uG83GZhL4
   bearer_token: AAAAAAAAAAAAAAAAAAAAAD0nKQEAAAAA3W3vlvuDaoP3ZHiff6%2BgaebX4PU%3DS8MtsU2fmrymJ3PHoOhqF5dtrMl9A7meddAoUoHvCL0zy0DJZv
