@@ -61,3 +61,5 @@
 	72.0% size reduction (50.0% fewer messages)
  (kafka.log.LogCleaner)
 >>>>>>> 1211fa55a2d4f78365fb66f71eab182882dd4fc1
+[2020-12-14 09:16:34,514] INFO Starting the log cleaner (kafka.log.LogCleaner)
+[2020-12-14 09:16:34,608] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
