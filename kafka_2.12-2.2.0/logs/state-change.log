@@ -2002,3 +2002,4 @@ kafka.common.StateChangeFailedException: Failed to elect leader for partition te
 [2020-12-07 12:33:11,774] TRACE [Broker id=0] Cached leader info PartitionState(controllerEpoch=2, leader=0, leaderEpoch=0, isr=[0], zkVersion=0, replicas=[0], offlineReplicas=[]) for partition __consumer_offsets-2 in response to UpdateMetadata request sent by controller 0 epoch 7 with correlation id 2 (state.change.logger)
 [2020-12-07 12:33:11,776] TRACE [Controller id=0 epoch=7] Received response {error_code=0} for request UPDATE_METADATA with correlation id 2 sent to broker ThinkPad-X250:9092 (id: 0 rack: null) (state.change.logger)
 >>>>>>> 261e914e405ffd1320fca583d21c77ab43ad45dd
+[2020-12-07 12:37:55,358] TRACE [Controller id=0 epoch=3] Received response {error_code=0} for request UPDATE_METADATA with correlation id 0 sent to broker laetitia-HP-Pavilion-Laptop-15-cs0xxx:9092 (id: 0 rack: null) (state.change.logger)
