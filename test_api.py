@@ -10,6 +10,7 @@
 
 # python3 test_api.py
 
+import json
 from searchtweets import load_credentials, ResultStream, gen_rule_payload, collect_results
 
 
@@ -20,6 +21,21 @@ premium_search_args = load_credentials(filename="./search_tweets_creds_example.y
 rule = gen_rule_payload("beyonce", results_per_call=100) # testing with a sandbox account
 print(rule)
 
-tweets = collect_results(rule, max_results=100, result_stream_args=premium_search_args)
+query = "@V2019N (#COVID19 OR patients OR pandemic OR hospitalization OR virus OR corona OR (tested positive) OR infected OR vaccine)"
+rule = gen_rule_payload(query, results_per_call=100, from_date="2020-01-01", to_date="2020-03-31")
 
-[print(tweet.all_text, end='\n\n') for tweet in tweets[0:10]]; 
+# try:
+#     tweets = collect_results(rule, max_results=100, result_stream_args=premium_search_args)
+# except:
+#     pass # Handle error here.
+
+# [print(tweet.all_text, end='\n\n') for tweet in tweets[0:10]]; 
+
+rs = ResultStream(rule_payload=rule, max_results=3000, **premium_search_args)
+print(rs)
+
+with open('tweetsData.jsonl', 'a', encoding='utf-8') as f:
+    for tweet in rs.stream():
+        json.dump(tweet, f)
+        f.write('\n')
+print('done')
