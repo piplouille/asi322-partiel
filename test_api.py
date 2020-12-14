@@ -33,9 +33,11 @@ rule = gen_rule_payload(query, results_per_call=100, from_date="2020-01-01", to_
 
 rs = ResultStream(rule_payload=rule, max_results=3000, **premium_search_args)
 print(rs)
+tweets = rs.stream()
 
-with open('tweetsData.jsonl', 'a', encoding='utf-8') as f:
-    for tweet in rs.stream():
-        json.dump(tweet, f)
-        f.write('\n')
+# with open('tweetsData.json', 'a', encoding='utf-8') as f:
+#     for tweet in rs.stream():
+#         json.dump(tweet, f)
+#         f.write('\n')
+        # print(tweet)
 print('done')
