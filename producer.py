@@ -19,26 +19,26 @@ topic_name = "twitterdata"
 
 class TwitterAuth():
     def authenticateTwitterApp(self):
+        """Authentification avec les token auprès de l'api twitter"""
         auth = OAuthHandler(consumer_key, consumer_secret)
         auth.set_access_token(access_token, access_token_secret)
         return auth
 
 class ListenerTS(StreamListener):
+    """Le listener"""
     def on_status(self, status):
-        print("on status")
         print(status.text)
 
     def on_data(self, raw_data):
-        print("on data")
+        """Reception de données"""
         producer.send(topic_name, str.encode(raw_data))
-        print(str.encode(raw_data))
         return True
 
     def on_error(self, status_code):
+        """Erreur, 420 : on appelle trop"""
         print(status_code)
         if status_code == 420:
             #returning False in on_error disconnects the stream
-            print("error")
             return False
 
 class TwitterStreamer():
@@ -47,18 +47,15 @@ class TwitterStreamer():
     
     def stream_tweets(self):
         while True:
-            listener = ListenerTS() 
-            auth = self.twitterAuth.authenticateTwitterApp()
-            stream = Stream(auth, listener)
-            # api = API(auth)
-            # for tweet in Cursor(api.search, q='tweepy').items(10):
-            #     print(tweet.text)
-            # stream.filter(track=["Apple"], stall_warnings=True, languages=["fr"])
-            stream.filter(track=["python"], is_async=True)
-            # print("*")
-            time.sleep(18)
+            listener = ListenerTS() # on crée le listener
+            auth = self.twitterAuth.authenticateTwitterApp() # on s'authentifie auprès de api twitter
+            stream = Stream(auth, listener) # on débute un stream
+            stream.filter(track=["python"], is_async=True) # on filtre par mot clef et en asynchrone
+            time.sleep(18) # 50 appels / 15 minutes max
 
 def getAccessTokenAndSecret():
+    """Récupérer les token de connexion
+    Ils restent valides pour une période infinie, pas besoin de rappeler la fonction"""
     auth = OAuthHandler(consumer_key, consumer_secret)
     try:
         redirect_url = auth.get_authorization_url()
