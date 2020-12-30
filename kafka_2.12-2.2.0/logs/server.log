@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [2020-12-14 12:06:35,174] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
 [2020-12-14 12:15:08,266] INFO Terminating process due to signal SIGHUP (org.apache.kafka.common.utils.LoggingSignalHandler)
 [2020-12-14 12:15:08,268] INFO Terminating process due to signal SIGHUP (org.apache.kafka.common.utils.LoggingSignalHandler)
@@ -69,3 +70,7 @@
 [2020-12-14 12:15:10,706] INFO [SocketServer brokerId=0] Shutting down socket server (kafka.network.SocketServer)
 [2020-12-14 12:15:10,746] INFO [SocketServer brokerId=0] Shutdown completed (kafka.network.SocketServer)
 [2020-12-14 12:15:10,748] INFO [KafkaServer id=0] shut down completed (kafka.server.KafkaServer)
+=======
+[2020-12-24 12:08:31,192] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2020-12-24 12:18:31,192] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+>>>>>>> e77d1e696f7f4301b3345c2286c44007c6c8c204
