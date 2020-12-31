@@ -19,6 +19,8 @@ Greffon de visualisation de données pour Elasticsearch
 
 ## Kafka
 gestion des flux de msg
+pour faire la liaison avec hdfs : ./kafka_2.12-2.2.0/bin/connect-standalone.sh ./kafka_2.12-2.2.0/config/connect-standalone.properties quickstart-hdfs.properties
+pour l'instant ça marche pas doit y'avoir des trucs à changer dans les fichiers en paramètres des .properties par ex.
 
 ## Spark
 Analyse des données

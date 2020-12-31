@@ -1,15 +1,2 @@
-<<<<<<< HEAD
-[2020-12-14 12:15:08,901] INFO Shutting down the log cleaner. (kafka.log.LogCleaner)
-[2020-12-14 12:15:08,902] INFO [kafka-log-cleaner-thread-0]: Shutting down (kafka.log.LogCleaner)
-[2020-12-14 12:15:08,902] INFO [kafka-log-cleaner-thread-0]: Stopped (kafka.log.LogCleaner)
-[2020-12-14 12:15:08,902] INFO [kafka-log-cleaner-thread-0]: Shutdown completed (kafka.log.LogCleaner)
-=======
-[2020-12-24 10:58:17,397] INFO Starting the log cleaner (kafka.log.LogCleaner)
-[2020-12-24 10:58:17,475] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
-[2020-12-24 10:58:18,235] INFO Shutting down the log cleaner. (kafka.log.LogCleaner)
-[2020-12-24 10:58:18,235] INFO [kafka-log-cleaner-thread-0]: Shutting down (kafka.log.LogCleaner)
-[2020-12-24 10:58:18,235] INFO [kafka-log-cleaner-thread-0]: Stopped (kafka.log.LogCleaner)
-[2020-12-24 10:58:18,235] INFO [kafka-log-cleaner-thread-0]: Shutdown completed (kafka.log.LogCleaner)
-[2020-12-24 10:58:30,549] INFO Starting the log cleaner (kafka.log.LogCleaner)
-[2020-12-24 10:58:30,628] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
->>>>>>> e77d1e696f7f4301b3345c2286c44007c6c8c204
+[2020-12-31 11:14:37,888] INFO Starting the log cleaner (kafka.log.LogCleaner)
+[2020-12-31 11:14:37,944] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
