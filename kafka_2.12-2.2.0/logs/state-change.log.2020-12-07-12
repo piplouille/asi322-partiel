@@ -446,6 +446,12 @@ kafka.common.StateChangeFailedException: Failed to elect leader for partition te
 [2020-12-07 12:13:53,128] TRACE [Broker id=0] Cached leader info PartitionState(controllerEpoch=2, leader=0, leaderEpoch=0, isr=[0], zkVersion=0, replicas=[0], offlineReplicas=[]) for partition __consumer_offsets-35 in response to UpdateMetadata request sent by controller 0 epoch 4 with correlation id 2 (state.change.logger)
 [2020-12-07 12:13:53,128] TRACE [Broker id=0] Cached leader info PartitionState(controllerEpoch=2, leader=0, leaderEpoch=0, isr=[0], zkVersion=0, replicas=[0], offlineReplicas=[]) for partition __consumer_offsets-2 in response to UpdateMetadata request sent by controller 0 epoch 4 with correlation id 2 (state.change.logger)
 [2020-12-07 12:13:53,130] TRACE [Controller id=0 epoch=4] Received response {error_code=0} for request UPDATE_METADATA with correlation id 2 sent to broker ThinkPad-X250:9092 (id: 0 rack: null) (state.change.logger)
+<<<<<<< HEAD
+<<<<<<< HEAD
+[2020-12-07 12:22:57,125] TRACE [Controller id=0 epoch=1] Received response {error_code=0} for request UPDATE_METADATA with correlation id 0 sent to broker laetitia-HP-Pavilion-Laptop-15-cs0xxx:9092 (id: 0 rack: null) (state.change.logger)
+=======
+=======
+>>>>>>> c197020410123f29a88497e34fa2afce5bc4d517
 [2020-12-07 12:15:51,047] ERROR [Controller id=0 epoch=4] Controller 0 epoch 4 failed to change state for partition test-2-0 from OnlinePartition to OnlinePartition (state.change.logger)
 kafka.common.StateChangeFailedException: Failed to elect leader for partition test-2-0 under strategy ControlledShutdownPartitionLeaderElectionStrategy
 	at kafka.controller.PartitionStateMachine.$anonfun$doElectLeaderForPartitions$9(PartitionStateMachine.scala:390)
@@ -996,6 +1002,13 @@ kafka.common.StateChangeFailedException: Failed to elect leader for partition te
 [2020-12-07 12:19:18,253] TRACE [Broker id=0] Cached leader info PartitionState(controllerEpoch=2, leader=0, leaderEpoch=0, isr=[0], zkVersion=0, replicas=[0], offlineReplicas=[]) for partition __consumer_offsets-35 in response to UpdateMetadata request sent by controller 0 epoch 5 with correlation id 2 (state.change.logger)
 [2020-12-07 12:19:18,253] TRACE [Broker id=0] Cached leader info PartitionState(controllerEpoch=2, leader=0, leaderEpoch=0, isr=[0], zkVersion=0, replicas=[0], offlineReplicas=[]) for partition __consumer_offsets-2 in response to UpdateMetadata request sent by controller 0 epoch 5 with correlation id 2 (state.change.logger)
 [2020-12-07 12:19:18,258] TRACE [Controller id=0 epoch=5] Received response {error_code=0} for request UPDATE_METADATA with correlation id 2 sent to broker ThinkPad-X250:9092 (id: 0 rack: null) (state.change.logger)
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 5ee5e72b80d7a5c2c08f22c48b2098276d595182
+[2020-12-07 12:31:17,697] TRACE [Controller id=0 epoch=2] Received response {error_code=0} for request UPDATE_METADATA with correlation id 0 sent to broker laetitia-HP-Pavilion-Laptop-15-cs0xxx:9092 (id: 0 rack: null) (state.change.logger)
+=======
+=======
+>>>>>>> c197020410123f29a88497e34fa2afce5bc4d517
 [2020-12-07 12:29:41,894] TRACE [Controller id=0 epoch=6] Changed state of replica 0 for partition __consumer_offsets-3 from OnlineReplica to OnlineReplica (state.change.logger)
 [2020-12-07 12:29:41,895] TRACE [Controller id=0 epoch=6] Changed state of replica 0 for partition __consumer_offsets-18 from OnlineReplica to OnlineReplica (state.change.logger)
 [2020-12-07 12:29:41,896] TRACE [Controller id=0 epoch=6] Changed state of replica 0 for partition __consumer_offsets-12 from OnlineReplica to OnlineReplica (state.change.logger)
@@ -1994,3 +2007,8 @@ kafka.common.StateChangeFailedException: Failed to elect leader for partition te
 [2020-12-07 12:33:11,774] TRACE [Broker id=0] Cached leader info PartitionState(controllerEpoch=2, leader=0, leaderEpoch=0, isr=[0], zkVersion=0, replicas=[0], offlineReplicas=[]) for partition __consumer_offsets-35 in response to UpdateMetadata request sent by controller 0 epoch 7 with correlation id 2 (state.change.logger)
 [2020-12-07 12:33:11,774] TRACE [Broker id=0] Cached leader info PartitionState(controllerEpoch=2, leader=0, leaderEpoch=0, isr=[0], zkVersion=0, replicas=[0], offlineReplicas=[]) for partition __consumer_offsets-2 in response to UpdateMetadata request sent by controller 0 epoch 7 with correlation id 2 (state.change.logger)
 [2020-12-07 12:33:11,776] TRACE [Controller id=0 epoch=7] Received response {error_code=0} for request UPDATE_METADATA with correlation id 2 sent to broker ThinkPad-X250:9092 (id: 0 rack: null) (state.change.logger)
+<<<<<<< HEAD
+>>>>>>> 261e914e405ffd1320fca583d21c77ab43ad45dd
+[2020-12-07 12:37:55,358] TRACE [Controller id=0 epoch=3] Received response {error_code=0} for request UPDATE_METADATA with correlation id 0 sent to broker laetitia-HP-Pavilion-Laptop-15-cs0xxx:9092 (id: 0 rack: null) (state.change.logger)
+=======
+>>>>>>> c197020410123f29a88497e34fa2afce5bc4d517
