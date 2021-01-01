@@ -1,6 +1,27 @@
 Partiel de ASI322
 ===
 
+# Comment lancer le projet
+Lancer Zookeeper et Kafka :
+```
+./projet.sh
+```
+
+Lancer producer :
+```
+python3 producer.py
+```
+
+Lancer Hadoop avec Docker : (dans le dossier docker-hadoop)
+```
+./start.sh
+```
+
+Lancer le connecteur :
+```
+./kafka_2.12-2.2.0/bin/connect-standalone.sh ./kafka_2.12-2.2.0/config/connect-standalone.properties confluentinc-kafka-connect-hdfs-10.0.0/etc/quickstart-hdfs.properties
+```
+
 # Architecture lambda
 
 1. collecte des données avec appel à l'API Twitter -> Kafka (cf article paragraphe 4.2)
