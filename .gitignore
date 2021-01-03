@@ -1,7 +1,7 @@
 kafka_2.12-2.2.0/logs/*
-kafka_2.12-2.2.0/logs/.gitkeep
+!kafka_2.12-2.2.0/logs/.gitkeep
 data.hdfs
 apache-zookeeper-3.6.2-bin/logs/*
-apache-zookeeper-3.6.2-bin/logs/.gitkeep
+!apache-zookeeper-3.6.2-bin/logs/.gitkeep
 kafka-log/*
 !kafka-log/.gitkeep
