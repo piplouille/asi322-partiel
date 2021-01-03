@@ -2,22 +2,22 @@ Partiel de ASI322
 ===
 
 # Comment lancer le projet
-Lancer Zookeeper et Kafka :
+Lancer Zookeeper et Kafka : (à la racine du projet)
 ```
 ./projet.sh
 ```
 
-Lancer producer :
+Lancer le producer de Kafka : (à la racine du projet)
 ```
 python3 producer.py
 ```
 
 Lancer Hadoop avec Docker : (dans le dossier docker-hadoop)
 ```
-./start.sh
+sudo docker-compose up
 ```
 
-Lancer le connecteur :
+Lancer le connecteur : (à la racine du projet)
 ```
 ./kafka_2.12-2.2.0/bin/connect-standalone.sh ./kafka_2.12-2.2.0/config/connect-standalone.properties confluentinc-kafka-connect-hdfs-10.0.0/etc/quickstart-hdfs.properties
 ```
@@ -26,31 +26,23 @@ Lancer le connecteur :
 
 1. collecte des données avec appel à l'API Twitter -> Kafka (cf article paragraphe 4.2)
 2. Gestion des flux de messages -> Kafka
-3. Stockage des données -> Hadoop. map reduce pour trier par hashtag ?
-4. Analyse des données -> Kafka
+3. Stockage des données -> Hadoop. map reduce pour trier par hashtag
+4. Analyse des données -> Spark
 
-# API Twitter
+# Technologies utilisées
 
-[Docs](https://developer.twitter.com/en/docs)
+## Twitter API
 
-# Techno
-
-### Kibana
-Greffon de visualisation de données pour Elasticsearch
+[Documentation](https://developer.twitter.com/en/docs)
 
 ## Kafka
-gestion des flux de msg
-pour faire la liaison avec hdfs : ./kafka_2.12-2.2.0/bin/connect-standalone.sh ./kafka_2.12-2.2.0/config/connect-standalone.properties quickstart-hdfs.properties
-pour l'instant ça marche pas doit y'avoir des trucs à changer dans les fichiers en paramètres des .properties par ex.
-il faut lancer hadoop (comment ?) et mettre l'url hdfs dans le quickstart-hdfs.properties
+> Gestion des flux de messages
 
-## Spark
-Analyse des données
+Pour faire la liaison Kafka-HDFS : cf [Partie 1](# Comment lancer le projet)
+Les paramètres du connecteur sont dans le fichier ```confluentinc-kafka-connect-hdfs-10.0.0/etc/quickstart-hdfs.properties```.
 
 ### Hadoop
-Storage and process of large datasets
+> Storage and process of large datasets
 
-## Non utilisée
-
-### Elasticsearch
-Logiciel pour indexation et recherche de données
+## Spark
+> Analyse des données
