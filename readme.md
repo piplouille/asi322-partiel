@@ -38,7 +38,7 @@ Lancer le connecteur : (à la racine du projet)
 ## Kafka
 > Gestion des flux de messages
 
-Pour faire la liaison Kafka-HDFS : cf [Partie 1](#comment)
+Pour faire la liaison Kafka-HDFS : cf [Partie 1](#comment-lancer-le-projet)
 Les paramètres du connecteur sont dans le fichier ```confluentinc-kafka-connect-hdfs-10.0.0/etc/quickstart-hdfs.properties```.
 
 ### Hadoop
