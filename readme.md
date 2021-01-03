@@ -42,7 +42,7 @@ Pour faire la liaison Kafka-HDFS : cf [Partie 1](#comment-lancer-le-projet)
 
 Les paramètres du connecteur sont dans le fichier ```confluentinc-kafka-connect-hdfs-10.0.0/etc/quickstart-hdfs.properties```.
 
-### Hadoop
+## Hadoop
 > Storage and process of large datasets
 
 ## Spark
