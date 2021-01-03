@@ -24,7 +24,7 @@ Lancer le connecteur : (à la racine du projet)
 
 # Architecture lambda
 
-1. collecte des données avec appel à l'API Twitter -> Kafka (cf article paragraphe 4.2)
+1. collecte des données avec appel à l'API Twitter -> Kafka (cf article dans ressources, paragraphe 4.2)
 2. Gestion des flux de messages -> Kafka
 3. Stockage des données -> Hadoop. map reduce pour trier par hashtag
 4. Analyse des données -> Spark
@@ -38,7 +38,7 @@ Lancer le connecteur : (à la racine du projet)
 ## Kafka
 > Gestion des flux de messages
 
-Pour faire la liaison Kafka-HDFS : cf [Partie 1](# Comment lancer le projet)
+Pour faire la liaison Kafka-HDFS : cf [Partie 1](#comment)
 Les paramètres du connecteur sont dans le fichier ```confluentinc-kafka-connect-hdfs-10.0.0/etc/quickstart-hdfs.properties```.
 
 ### Hadoop
