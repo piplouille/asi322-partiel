@@ -5,3 +5,4 @@ apache-zookeeper-3.6.2-bin/logs/*
 !apache-zookeeper-3.6.2-bin/logs/.gitkeep
 kafka-log/*
 !kafka-log/.gitkeep
+token.txt

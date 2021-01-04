@@ -8,11 +8,10 @@ from tweepy.streaming import StreamListener
 from tweepy import Stream
 import time
 
-consumer_key = "dPmHS7bNm5a5osJcn0NPgFV34"
-consumer_secret = "0yuR2hRUcv2tLV6rgDWtZzEnVXUMKj6OXgrDUMQ9zc2zOYdlYk"
-access_token = "1342058413107384321-WDmYva8hgjnLqNGQanT3XAyQFctDkS"
-access_token_secret = "q0wAXiogkkG8KgWIasGKmdgSFaUDSzON8tpHKGfK2NI4E"
-
+consumer_key = ""
+consumer_secret = ""
+access_token = ""
+access_token_secret = ""
 
 producer = KafkaProducer(bootstrap_servers='localhost:9092')
 topic_name = "twitterdata"
